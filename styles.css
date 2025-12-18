@@ -49,6 +49,7 @@ img {
   display: none;
 }
 
+/* Lagt til nytt klassenavn som aktiveres i JS */
 .visible {
   display: flex;
 }
@@ -211,6 +212,7 @@ img {
     display: none;
   }
 
+  /* Lagt til nytt klassenavn som aktiveres i JS */
   .hamburgerList {
     display: flex;
   }

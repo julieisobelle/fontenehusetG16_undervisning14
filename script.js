@@ -33,3 +33,14 @@ dropDownOne.addEventListener("click", function () {
 
   showTextOne.classList.toggle("visible");
 });
+
+const dropDownTwo = document.querySelector("#dropDownTwo");
+console.log(dropDownOne);
+
+dropDownTwo.addEventListener("click", function () {
+  console.log("Clicked?");
+
+  const showTextTwo = document.querySelector("#showTextTwo");
+
+  showTextTwo.classList.toggle("visible");
+});
