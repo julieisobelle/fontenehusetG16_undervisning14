@@ -1,0 +1,217 @@
+:root {
+  /* Farge variabler */
+  --primaryColor: #fcc388ff; /* Peach */
+  --secondaryColor: #ffc5c9ff; /* Tea rose red*/
+  --accentColor: #ffffd1ff; /* Cream */
+  --accentColorTwo: #fee5d0ff; /* Champagne pink*/
+  --accentColorThree: #fff6edff; /* Seashell */
+
+  /* Størrelse variabler */
+  --smallSpace: 8px;
+  --mediumSpace: 16px;
+  --largeSpace: 24px;
+  --fullScreen: 100vh;
+
+  /* Skrift variabler */
+  --fontFamily: "Roboto";
+  --fontSize: 18px;
+}
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fontFamily);
+}
+
+img {
+  width: 50%;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.button {
+  width: 75px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.section {
+  min-height: 90vh;
+  padding: 8px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: lightgray;
+}
+
+/* Nav */
+.headerNav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+/* MAIN */
+/* Hero */
+.sectionHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText {
+  width: 50%;
+  text-align: center;
+}
+
+.introImg {
+  width: 50%;
+}
+
+.buttonOne {
+  background-color: var(--primaryColor);
+}
+.buttonOne:hover {
+  background-color: var(--accentColor);
+}
+
+.buttonTwo {
+  background-color: var(--accentColor);
+}
+.buttonTwo:hover {
+  background-color: var(--primaryColor);
+}
+/* About */
+.sectionAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText {
+  width: 50%;
+}
+
+.introImg {
+  width: 50%;
+}
+
+/* Project */
+.sectionProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.projectCard {
+  border: 2px black solid;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* In Between */
+.inBetween {
+  height: 200px;
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inBetweenText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+/* MEDIA */
+@media (max-width: 426px) {
+  .heroIntro,
+  .aboutIntro,
+  .sectionProjects {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  /* HAMBURGER */
+  .headerNav {
+    flex-direction: column;
+  }
+  .hamburgerIcon {
+    display: flex;
+  }
+
+  .navList {
+    /* flex-direction: column; */
+    display: none;
+  }
+
+  .hamburgerList {
+    display: flex;
+  }
+}
